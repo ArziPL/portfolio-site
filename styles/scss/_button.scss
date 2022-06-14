@@ -1,0 +1,16 @@
+.button {
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    font-size: $size-s;
+
+    &:hover {
+        opacity:1;
+        cursor: pointer;
+    }
+
+    &:active {
+        text-decoration: underline;
+    }
+}

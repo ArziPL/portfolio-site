@@ -1,0 +1,12 @@
+.link {
+    @include flex-center;
+    margin:3px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+
+    .link__icon {
+        width: 25px;
+        height: 25px;
+    }
+}

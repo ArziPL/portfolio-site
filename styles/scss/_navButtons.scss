@@ -1,0 +1,13 @@
+.navbar__buttons {
+    @include flex-center;
+    gap:30px;
+    flex-direction: row;
+    font-size: $size-s;
+}
+
+@media screen and (max-width:500px) {
+    .navbar__buttons {
+        flex-direction: column;
+        gap:0px;
+    }
+}

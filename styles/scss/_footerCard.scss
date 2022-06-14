@@ -1,0 +1,12 @@
+.footerCard {
+    .footerCard__links {
+        @include flex-center;
+    }
+
+    .footerCard__added {
+        font-size: $size-s;
+        letter-spacing: 1px;
+        opacity: 0.5;
+        @include flex-center
+    }
+}

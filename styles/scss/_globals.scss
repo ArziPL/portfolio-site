@@ -1,9 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto&display=swap');
+
+
+$size-s:15px;
+$size-m:19px;
+$size-l:23px;
+$size-xl:46px;
+$size-xxl:92px;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -13,4 +28,23 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff #000000;
+}
+
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 3px solid #000000;
 }
