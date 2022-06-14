@@ -39,28 +39,28 @@ const Home: NextPage = () => {
         <div className="projects__desc--desc">Check out my <a href="https://github.com/ArziPL?tab=repositories" target="_blank" rel="noreferrer">GitHub</a> for all of them or click on one !</div>
         </div>
         <div className="projects__wrapper">
-          <ProjectCard bgColor="#E11392" name="space-next" link="https://github.com/ArziPL/space-next">
+          <ProjectCard bgColor="#E05F5B" name="space-next" link="https://github.com/ArziPL/space-next">
             Responsive site displaying two dynamic lists with data acquired from SpaxeX REST API, done in Next.js, styled in SCSS
           </ProjectCard>
-          <ProjectCard bgColor="#F9F871" name="hello-mern" link="https://github.com/ArziPL/hello-mern">
+          <ProjectCard bgColor="#65A4D9" name="hello-mern" link="https://github.com/ArziPL/hello-mern">
             App letting you log in, register, show all users or delete any of them while updating all data constantly in MongoDB using Express.js server. Front-end done in clear React.
           </ProjectCard>
-          <ProjectCard bgColor="#0075F2" name="crypto-articles-api" link="https://github.com/ArziPL/crypto-articles-api">
+          <ProjectCard bgColor="#F9F2D5" name="crypto-articles-api" link="https://github.com/ArziPL/crypto-articles-api">
               Flask API which scrapes and returns cryptocurrency news, for the project Exchange.
           </ProjectCard>
-          <ProjectCard bgColor="#0088E9" name="exchange" link="https://github.com/ArziPL/exchange">
+          <ProjectCard bgColor="#F3E8AD" name="exchange" link="https://github.com/ArziPL/exchange">
             [IN PROGRESS] Cryptocurrency market app containing functions such as listing cryptocurrencies, showing detailed data about a given cryptocurrency or news from the world of cryptocurrencies.
           </ProjectCard>
-          <ProjectCard bgColor="#008FBD" name="dsapp" link="https://github.com/ArziPL/dsapp">
+          <ProjectCard bgColor="#5A637F" name="dsapp" link="https://github.com/ArziPL/dsapp">
             All data structures, algorithms and programming problems which I have studied and tried to understand. All files are in Python, in most cases documented and ready to use.
           </ProjectCard>
-          <ProjectCard bgColor="#008F80" name="lux-moto" link="https://github.com/ArziPL/lux-moto">
+          <ProjectCard bgColor="#48767A" name="lux-moto" link="https://github.com/ArziPL/lux-moto">
             My first project in React, written in old class components. Also first time used SCSS. Project at the moment is not possible to run due to old dependencies.
           </ProjectCard>
-          <ProjectCard bgColor="#FFCE51" name="is-your-password-safe" link="https://github.com/ArziPL/is-your-password-safe">
+          <ProjectCard bgColor="#E8E8E9" name="is-your-password-safe" link="https://github.com/ArziPL/is-your-password-safe">
             Script checking how many times your password leaked/was breached using haveibeenpwned.com API and good old Python.
           </ProjectCard>
-          <ProjectCard bgColor="#A551D2" name="30-tweets" link="https://github.com/ArziPL/30-tweets">
+          <ProjectCard bgColor="#A0D988" name="30-tweets" link="https://github.com/ArziPL/30-tweets">
             Python script printing in console last 30 tweets of any user (default Eminem) using Twitter API.
           </ProjectCard>
           </div>
