@@ -1,0 +1,44 @@
+// Whole section of contact
+.contact-section {
+  width: 100%;
+  height: 300px;
+  @include flex-center;
+
+  // Contact content
+  .contact {
+    // Contact wrapper for icons links
+    .contact__linksWrapper {
+      @include flex-center;
+
+      // Every icon wrapper
+      .contact__link {
+        @include flex-center;
+        margin: 3px;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+
+        // Every img icon
+        .contact__link--icon {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+
+    // Quote under icons
+    .contact__added {
+      @include flex-center;
+      font-size: $size-s;
+      letter-spacing: 1px;
+      opacity: 0.5;
+    }
+  }
+}
+
+@media screen and (max-width: 975px) {
+  // Whole section of contact
+  .contact-section {
+    margin-top: 150px;
+  }
+}

@@ -1,0 +1,88 @@
+// Whole about section
+.about-section {
+  height: 950px;
+  width: 100%;
+
+  // About content
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    // About logo
+    .about__icon {
+      height: 150px;
+      width: 150px;
+      margin-top: 100px;
+    }
+
+    // About wrapper for name and profession
+    .about__personal {
+      @include flex-center;
+      flex-direction: column;
+      margin-bottom: 50px;
+
+      // Name under logo
+      .about__personal--name {
+        font-size: $size-xl;
+      }
+
+      // Profession under name/logo
+      .about__personal--profession {
+        letter-spacing: 3px;
+      }
+    }
+
+    // One paragraph
+    .about__paragraph {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 60%;
+      font-size: $size-m;
+
+      // Title of paragraph
+      .about__paragraph--header {
+        font-size: $size-m;
+      }
+
+      // Content of paragraph
+      .about__paragraph--text {
+        font-size: $size-m;
+      }
+    }
+  }
+}
+
+// For mobile
+@media screen and (max-width: 700px) {
+  // Whole about section
+  .about-section {
+    height: auto;
+    // About content
+    .about {
+      // About wrapper for name and profession
+      .about__personal {
+        // Name under logo
+        .about__personal--name {
+          font-size: $size-l;
+        }
+      }
+
+      // One paragraph
+      .about__paragraph {
+        width: 80%;
+
+        // Title of paragraph
+        .about__paragraph--header {
+          font-size: $size-m;
+        }
+        // Content of paragraph
+        .about__paragraph--text {
+          font-size: $size-m;
+        }
+      }
+    }
+  }
+}

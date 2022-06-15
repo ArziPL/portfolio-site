@@ -1,16 +1,11 @@
 .button {
-    color:white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     opacity: 0.8;
+    color:white;
+    letter-spacing: 2px;
     font-size: $size-s;
 
     &:hover {
         opacity:1;
         cursor: pointer;
-    }
-
-    &:active {
-        text-decoration: underline;
     }
 }

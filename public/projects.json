@@ -1,0 +1,58 @@
+[
+  {
+    "id":0,
+    "name": "space-next",
+    "bgColor": "#E05F5B",
+    "link": "https://github.com/ArziPL/space-next",
+    "desc": "Responsive site displaying two dynamic lists with data acquired from SpaxeX REST API, done in Next.js, styled in SCSS"
+  },
+  {
+    "id":1,
+    "name": "hello-mern",
+    "bgColor": "#65A4D9",
+    "link": "https://github.com/ArziPL/hello-mern",
+    "desc": "App letting you log in, register, show all users or delete any of them while updating all data constantly in MongoDB using Express.js server. Front-end done in clear React."
+  },
+  {
+    "id":2,
+    "name": "crypto-articles-api",
+    "bgColor": "#F9F2D5",
+    "link": "https://github.com/ArziPL/crypto-articles-api",
+    "desc": "Flask API which scrapes and returns cryptocurrency news, for the project Exchange."
+  },
+  {
+    "id":3,
+    "name": "exchange",
+    "bgColor": "#F3E8AD",
+    "link": "https://github.com/ArziPL/exchange",
+    "desc": "[IN PROGRESS] Cryptocurrency market app containing functions such as listing cryptocurrencies, showing detailed data about a given cryptocurrency or news from the world of cryptocurrencies."
+  },
+  {
+    "id":4,
+    "name": "dsapp",
+    "bgColor": "#5A637F",
+    "link": "https://github.com/ArziPL/dsapp",
+    "desc": "All data structures, algorithms and programming problems which I have studied and tried to understand. All files are in Python, in most cases documented and ready to use."
+  },
+  {
+    "id":5,
+    "name": "lux-moto",
+    "bgColor": "#48767A",
+    "link": "https://github.com/ArziPL/lux-moto",
+    "desc": "My first project in React, written in old class components. Also first time used SCSS. Project at the moment is not possible to run due to old dependencies."
+  },
+  {
+    "id":6,
+    "name": "is-your-password-safe",
+    "bgColor": "#E8E8E9",
+    "link": "https://github.com/ArziPL/is-your-password-safe",
+    "desc": "Script checking how many times your password leaked/was breached using haveibeenpwned.com API and good old Python."
+  },
+  {
+    "id":7,
+    "name": "30-tweets",
+    "bgColor": "#A0D988",
+    "link": "https://github.com/ArziPL/30-tweets",
+    "desc": "Python script printing in console last 30 tweets of any user (default Eminem) using Twitter API."
+  }
+]

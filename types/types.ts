@@ -5,9 +5,9 @@ export type BasicComponentProps = {
 }
 
 export type CardProps = {
-    title:string,
     children:any,
     className?:string,
+    title:string,
 }
 
 export type IconProps = {
@@ -17,15 +17,15 @@ export type IconProps = {
 }
 
 export type ProjectCardProps = {
+    children:any,
+    key:any,
     name:string,
     bgColor:string,
-    link?:string,
-    children:any,
+    link:string,
 }
 
 export type LinkProps = {
     url:string,
     imgUrl:string,
     title:string,
-    onClick?:any,
 }

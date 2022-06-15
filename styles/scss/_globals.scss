@@ -1,6 +1,7 @@
+// Fonts
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto&display=swap');
 
-
+// Font size scheme
 $size-s:15px;
 $size-m:19px;
 $size-l:23px;
@@ -13,7 +14,7 @@ $size-xxl:92px;
   align-items: center;
 }
 
-
+// BASIC STYLES
 html,
 body {
   padding: 0;
@@ -30,6 +31,7 @@ a {
   box-sizing: border-box;
 }
 
+// SCROLL STYLES
 * {
   scrollbar-width: thin;
   scrollbar-color: #ffffff #000000;

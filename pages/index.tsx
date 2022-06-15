@@ -1,14 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Section from "../components/organisms/Section";
-import HelloCard from "../components/molecules/HelloCard";
-import AboutTemplate from "../components/organisms/AboutTemplate";
+import HelloMain from "../components/molecules/HelloMain";
+import About from "../components/organisms/About";
 import ProjectCard from "../components/molecules/ProjectCard";
 import Title from "../components/atoms/Title";
-import FooterCard from "../components/organisms/FooterCard";
-import { relative } from "path";
+import Contact from "../components/organisms/Contact";
+import projects from "./../public/projects.json"
 const Home: NextPage = () => {
   return (
+
     <div>
       <Head>
         <title>ArZi</title>
@@ -22,53 +23,48 @@ const Home: NextPage = () => {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <Section className="section main">
-        <HelloCard title="Hey, I'm ArZi">
+
+      {/* Hello section, black screen on top of page */}
+      <Section className="main-section">
+        <HelloMain title="Hey, I'm ArZi">
           Dedicated web dev. Faithful to Next.js. Good friend with Python. <br /> Technology geek
-        </HelloCard>
+        </HelloMain>
       </Section>
 
-      <Section className="section about">
+
+      {/* Section describing me with profile icon and three paragraphs */}
+      <Section className="about-section">
         <a id="about"></a>
-        <AboutTemplate/>
+        <About/>
         <a id="projects" style={{position:"relative",top:"-50px"}}></a>
       </Section>
-      <Section className="section projects">
+
+
+      {/* Project section in grid-like styling */}
+      <Section className="projects-section">
+
+        {/* Header for project section */}
         <div className="projects__desc">
-        <Title className="projects__desc--title">Projects</Title>
-        <div className="projects__desc--desc">Check out my <a href="https://github.com/ArziPL?tab=repositories" target="_blank" rel="noreferrer">GitHub</a> for all of them or click on one !</div>
+          <Title className="projects__header--title">Projects</Title>
+          <div className="projects__header--text">Check out my <a href="https://github.com/ArziPL?tab=repositories" target="_blank" rel="noreferrer">GitHub</a> for all of them or click on one !</div>
         </div>
-        <div className="projects__wrapper">
-          <ProjectCard bgColor="#E05F5B" name="space-next" link="https://github.com/ArziPL/space-next">
-            Responsive site displaying two dynamic lists with data acquired from SpaxeX REST API, done in Next.js, styled in SCSS
-          </ProjectCard>
-          <ProjectCard bgColor="#65A4D9" name="hello-mern" link="https://github.com/ArziPL/hello-mern">
-            App letting you log in, register, show all users or delete any of them while updating all data constantly in MongoDB using Express.js server. Front-end done in clear React.
-          </ProjectCard>
-          <ProjectCard bgColor="#F9F2D5" name="crypto-articles-api" link="https://github.com/ArziPL/crypto-articles-api">
-              Flask API which scrapes and returns cryptocurrency news, for the project Exchange.
-          </ProjectCard>
-          <ProjectCard bgColor="#F3E8AD" name="exchange" link="https://github.com/ArziPL/exchange">
-            [IN PROGRESS] Cryptocurrency market app containing functions such as listing cryptocurrencies, showing detailed data about a given cryptocurrency or news from the world of cryptocurrencies.
-          </ProjectCard>
-          <ProjectCard bgColor="#5A637F" name="dsapp" link="https://github.com/ArziPL/dsapp">
-            All data structures, algorithms and programming problems which I have studied and tried to understand. All files are in Python, in most cases documented and ready to use.
-          </ProjectCard>
-          <ProjectCard bgColor="#48767A" name="lux-moto" link="https://github.com/ArziPL/lux-moto">
-            My first project in React, written in old class components. Also first time used SCSS. Project at the moment is not possible to run due to old dependencies.
-          </ProjectCard>
-          <ProjectCard bgColor="#E8E8E9" name="is-your-password-safe" link="https://github.com/ArziPL/is-your-password-safe">
-            Script checking how many times your password leaked/was breached using haveibeenpwned.com API and good old Python.
-          </ProjectCard>
-          <ProjectCard bgColor="#A0D988" name="30-tweets" link="https://github.com/ArziPL/30-tweets">
-            Python script printing in console last 30 tweets of any user (default Eminem) using Twitter API.
-          </ProjectCard>
+
+        {/* All project cards - rendered from json file public/projects.json */}
+        <div className="projects__cards">
+          {projects.map((project) => (
+            <ProjectCard key={project.id}  name={project.name} bgColor={project.bgColor} link={project.link}>{project.desc}</ProjectCard>
+          ))}
           </div>
       </Section>
-      <Section className="section footer">
+
+
+      {/* Small contact section with links and quote */}
+      <Section className="contact-section">
         <a id="contact"></a>
-        <FooterCard/>
+        <Contact/>
       </Section>
+
+
     </div>
   );
 };

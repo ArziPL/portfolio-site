@@ -1,0 +1,45 @@
+// Whole navbar
+.navbar {
+  height: 100px;
+  min-height: 60px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  @include flex-center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  z-index: 999;
+
+  // Nav ArZi
+  .navbar__title {
+    font-size: $size-xl;
+    letter-spacing: 2px;
+  }
+
+  // Navigation buttons
+  .navbar__buttons {
+    @include flex-center;
+    gap: 30px;
+  }
+}
+
+// For mobile
+@media screen and (max-width: 500px) {
+  // Whole navbar
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+
+    // Nav ArZi
+    .navbar__title {
+      font-size: $size-l;
+    }
+
+    // Navigation buttons
+    .navbar__buttons {
+      flex-direction: column;
+      gap: 0px;
+    }
+  }
+}

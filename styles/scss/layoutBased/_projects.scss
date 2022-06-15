@@ -1,0 +1,100 @@
+// Whole projects section
+.projects-section {
+  width: 100%;
+
+  // Projects header wrapper
+  .projects__desc {
+    @include flex-center;
+    flex-direction: column;
+    margin-bottom: 75px;
+
+    // Text under header
+    .projects__header--text {
+      // Link to GitHub
+      a {
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // Wrapper for all projects cards
+  .projects__cards {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    // One project card
+    .projects__projectCard {
+      height: 350px;
+      width: 24.7vw;
+      margin: 1px;
+      padding: 0 20px 0 20px;
+      @include flex-center;
+      flex-direction: column;
+      font-size: $size-l;
+      cursor: pointer;
+      filter: contrast(110%);
+
+      // Project card title
+      .projects__projectCard--name {
+        font-size: $size-l;
+        font-weight: bold;
+      }
+
+      // Project card description
+      .projects__projectCard--text {
+        font-size: $size-m;
+      }
+
+      &:hover {
+        filter: brightness(1.2);
+      }
+    }
+  }
+}
+
+// For mobile
+@media screen and (max-width: 975px) {
+  // Whole projects section
+  .projects-section {
+    margin-top: 50px;
+
+    // Title of header
+    .projects__header--title {
+      font-size: $size-l;
+    }
+
+    // Text under header
+    .projects__header--text {
+      font-size: $size-m;
+      width: 80%;
+      text-align: center;
+    }
+
+    // Wrapper for all projects cards
+    .projects__cards {
+      flex-wrap: nowrap;
+      align-items: center;
+
+      // One project card
+      .projects__projectCard {
+        width: 99%;
+        height: 700px;
+
+        // Project card title
+        .projects__projectCard--name {
+          font-size: $size-l;
+        }
+
+        // Project card description
+        .projects__projectCard--text {
+          font-size: $size-m;
+        }
+      }
+    }
+  }
+}

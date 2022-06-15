@@ -1,0 +1,50 @@
+// Whole section of main without responsive navbar
+.main-section {
+  height: calc(100vh - 100px);
+  width: 100%;
+  @include flex-center;
+  background-color: black;
+
+  // Center content of main
+  .helloMain {
+    height: 90%;
+    @include flex-center;
+    flex-direction: column;
+    color: white;
+
+    // Title Hey I'm
+    .helloMain__title {
+      font-size: $size-xxl;
+      font-family: "PT Serif", serif;
+    }
+
+    // Text under it
+    .helloMain__text {
+      text-align: center;
+      font-size: $size-l;
+      letter-spacing: 2px;
+      margin-bottom: 200px;
+    }
+  }
+}
+
+// For mobile
+@media screen and (max-width: 850px) {
+  // Whole section of main without responsive navbar
+  .main-section {
+
+    // Center content of main
+    .helloMain {
+      
+      // Title Hey I'm
+      .helloMain__title {
+        font-size: $size-xl;
+      }
+
+      // Text under it
+      .helloMain__text {
+        font-size: $size-s;
+      }
+    }
+  }
+}
