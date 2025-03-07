@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       {/* Hello section, black screen on top of page */}
       <Section className="main-section">
         <HelloMain title="Hey, I'm ArZi">
-          Dedicated web dev. Faithful to Next.js. Good friend with Python. <br /> Technology geek
+          Dedicated to IT. Faithful in fitness. In love with cars
         </HelloMain>
       </Section>
 
